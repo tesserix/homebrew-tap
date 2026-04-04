@@ -1,13 +1,13 @@
 class CrossplaneValidate < Formula
   desc "Terraform plan-like validation for Crossplane resources"
   homepage "https://github.com/tesserix/crossplane-validation"
-  version "0.2.0"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/tesserix/crossplane-validation/releases/download/v0.2.0/crossplane-validate-darwin-arm64"
-      sha256 "3a589233f39632666577a97576cae7b120917f74ce1572310d8d8edf4236fc09"
+      url "https://github.com/tesserix/crossplane-validation/releases/download/v0.3.0/crossplane-validate-darwin-arm64"
+      sha256 "13d38119e6a15d3dc0399daa612774f88030da2b0f78822cdedf484b8fb2fefb"
 
       def install
         bin.install "crossplane-validate-darwin-arm64" => "crossplane-validate"
@@ -15,8 +15,8 @@ class CrossplaneValidate < Formula
     end
 
     on_intel do
-      url "https://github.com/tesserix/crossplane-validation/releases/download/v0.2.0/crossplane-validate-darwin-amd64"
-      sha256 "bdc380ba3f884b31a2884648ba6e61bc11e6ecfa023b681f0fc78df5975ae48f"
+      url "https://github.com/tesserix/crossplane-validation/releases/download/v0.3.0/crossplane-validate-darwin-amd64"
+      sha256 "067f5bb469f3304b3a86fc2a4ebb228038cd24eb3ddcd80de75f8940bf4d45e8"
 
       def install
         bin.install "crossplane-validate-darwin-amd64" => "crossplane-validate"
@@ -26,8 +26,8 @@ class CrossplaneValidate < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/tesserix/crossplane-validation/releases/download/v0.2.0/crossplane-validate-linux-arm64"
-      sha256 "31edfa096ac7bbd5b1aa114d33bd87ec6f9f60235d2312341bcaf7a95c7684f7"
+      url "https://github.com/tesserix/crossplane-validation/releases/download/v0.3.0/crossplane-validate-linux-arm64"
+      sha256 "05b5dcbf9ecc7717b1ad6361cbe1095d511df31edc017571e308489f513705f0"
 
       def install
         bin.install "crossplane-validate-linux-arm64" => "crossplane-validate"
@@ -35,8 +35,8 @@ class CrossplaneValidate < Formula
     end
 
     on_intel do
-      url "https://github.com/tesserix/crossplane-validation/releases/download/v0.2.0/crossplane-validate-linux-amd64"
-      sha256 "e73661441adb9d4121e04bd4b01d562e9ac6292cd125d85cb453e1914f376460"
+      url "https://github.com/tesserix/crossplane-validation/releases/download/v0.3.0/crossplane-validate-linux-amd64"
+      sha256 "cf13649ead0230c6557737dfd55f60bb4960cffae321a94886bfe76e75b84f36"
 
       def install
         bin.install "crossplane-validate-linux-amd64" => "crossplane-validate"
