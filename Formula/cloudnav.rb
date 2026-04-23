@@ -5,13 +5,13 @@
 class Cloudnav < Formula
   desc "Fast, keyboard-driven multi-cloud TUI for Azure, GCP, and AWS."
   homepage "https://github.com/tesserix/cloudnav"
-  version "0.20.2"
+  version "0.20.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tesserix/cloudnav/releases/download/v0.20.2/cloudnav_0.20.2_macos_x86_64.tar.gz"
-      sha256 "188a01940497ef0c8e694d793680bf53325ced25ad49a9d624a404df5320b174"
+      url "https://github.com/tesserix/cloudnav/releases/download/v0.20.3/cloudnav_0.20.3_macos_x86_64.tar.gz"
+      sha256 "540b82230181d948b91f0f0be6e462e737fc5a9d5f75f5e88004db7e2435d25c"
 
       define_method(:install) do
         bin.install "cloudnav"
@@ -19,8 +19,8 @@ class Cloudnav < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tesserix/cloudnav/releases/download/v0.20.2/cloudnav_0.20.2_macos_arm64.tar.gz"
-      sha256 "8ff77f5dafae3ed3479b6cf581e6183883b3a892ae81c8a1d2843181e9b2f60f"
+      url "https://github.com/tesserix/cloudnav/releases/download/v0.20.3/cloudnav_0.20.3_macos_arm64.tar.gz"
+      sha256 "3b0f9f511882a3534723757eaab757204356978253243daab3b8d55eec566168"
 
       define_method(:install) do
         bin.install "cloudnav"
@@ -31,16 +31,16 @@ class Cloudnav < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tesserix/cloudnav/releases/download/v0.20.2/cloudnav_0.20.2_linux_x86_64.tar.gz"
-      sha256 "327201cef5f139bd55844dcecf7f9d6c5346905300345ccee05c0ff9993ba1e2"
+      url "https://github.com/tesserix/cloudnav/releases/download/v0.20.3/cloudnav_0.20.3_linux_x86_64.tar.gz"
+      sha256 "e7741e70820efc201d78353545d8ebd3e2b70e417aaf7516c4e463ecf158465b"
       define_method(:install) do
         bin.install "cloudnav"
         generate_completions_from_executable(bin/"cloudnav", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tesserix/cloudnav/releases/download/v0.20.2/cloudnav_0.20.2_linux_arm64.tar.gz"
-      sha256 "7d0081d86bf47c34a4682ddd74bcb67f882d274127f1b536ddaa139d75fc2890"
+      url "https://github.com/tesserix/cloudnav/releases/download/v0.20.3/cloudnav_0.20.3_linux_arm64.tar.gz"
+      sha256 "307cd521d61195a46a79f52d44ba4015a7e01b0e6ccf22c68aa34a74e7bab7e1"
       define_method(:install) do
         bin.install "cloudnav"
         generate_completions_from_executable(bin/"cloudnav", "completion")
