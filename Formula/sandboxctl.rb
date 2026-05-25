@@ -5,7 +5,7 @@
 class Sandboxctl < Formula
   desc "One-command local Kubernetes sandbox for macOS (kind + Argo CD + Kargo + Istio)"
   homepage "https://github.com/tesserix/sandboxctl"
-  version "2.8.6"
+  version "2.8.7"
   license "MIT"
 
   depends_on "helm"
@@ -15,8 +15,8 @@ class Sandboxctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tesserix/sandboxctl/releases/download/v2.8.6/sandboxctl_2.8.6_macOS_amd64.tar.gz"
-      sha256 "ea38cd38a7bdde82117fa9e93ef7fb3ceed896e7c0d2a82ce8f23a6ae8f6dd1f"
+      url "https://github.com/tesserix/sandboxctl/releases/download/v2.8.7/sandboxctl_2.8.7_macOS_amd64.tar.gz"
+      sha256 "749f1ba3813c241bc9dd9e64f39ca257dcbcdd0092537dc89ee4b2e0b585c6e1"
 
       define_method(:install) do
         libexec.install "sandboxctl" => "sandboxctl-bin"
@@ -30,8 +30,8 @@ class Sandboxctl < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tesserix/sandboxctl/releases/download/v2.8.6/sandboxctl_2.8.6_macOS_arm64.tar.gz"
-      sha256 "54a163fcb892bee645fa171f3ad989fd0ec6b818771753bd1dc409fe8c76789c"
+      url "https://github.com/tesserix/sandboxctl/releases/download/v2.8.7/sandboxctl_2.8.7_macOS_arm64.tar.gz"
+      sha256 "2ed557fa3fb78b95c35a554d4c100da623ecb87c9cdb26c6dc7cfdfe3b71385b"
 
       define_method(:install) do
         libexec.install "sandboxctl" => "sandboxctl-bin"
@@ -48,8 +48,8 @@ class Sandboxctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tesserix/sandboxctl/releases/download/v2.8.6/sandboxctl_2.8.6_linux_amd64.tar.gz"
-      sha256 "41783809d43e3610c6e36aed143250685e4149769ac120ec39a73e1ff2053208"
+      url "https://github.com/tesserix/sandboxctl/releases/download/v2.8.7/sandboxctl_2.8.7_linux_amd64.tar.gz"
+      sha256 "d5e55b30ff0f4740d9270d0f26a0f90c3d0f0fbfaeaf94c65e44b2f0a8b8dd8e"
       define_method(:install) do
         libexec.install "sandboxctl" => "sandboxctl-bin"
         libexec.install "sandbox.sh", "kind-config.yaml", "manifests", "lib"
@@ -62,8 +62,8 @@ class Sandboxctl < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tesserix/sandboxctl/releases/download/v2.8.6/sandboxctl_2.8.6_linux_arm64.tar.gz"
-      sha256 "42f719ae5de7397a9a1bbd5d576f33699c41ba632adc0971dcd50524bc13120c"
+      url "https://github.com/tesserix/sandboxctl/releases/download/v2.8.7/sandboxctl_2.8.7_linux_arm64.tar.gz"
+      sha256 "49f8b6be65840b959f7fd6164a5ec211102bb14f06a182af12b1711fb866267c"
       define_method(:install) do
         libexec.install "sandboxctl" => "sandboxctl-bin"
         libexec.install "sandbox.sh", "kind-config.yaml", "manifests", "lib"
