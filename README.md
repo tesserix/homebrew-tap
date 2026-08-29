@@ -19,11 +19,12 @@ artifacts. The application source repository remains private.
 
 ## Maintainer release
 
-Run the `Release DevAI CLI` workflow with the version from DevAI's
-`pyproject.toml` and a trusted branch or tag. The workflow builds both macOS
-architectures, smoke-tests the executables, publishes release assets, audits a
-new formula, installs it with Homebrew, and commits the formula update.
+Run the `Release DevAI CLI to Homebrew` workflow in the private DevAI
+repository with the version from `pyproject.toml` and a trusted branch or tag.
+It builds both macOS architectures, smoke-tests the executables, publishes
+release assets here, audits a new formula, installs it with Homebrew, and
+commits the formula update.
 
-The workflow reads the private source using the `DEVAI_DEPLOY_KEY` Actions
-secret. Its matching public key must be a read-only deploy key on
-`tesserix/devai`.
+The private release workflow uses GCP workload identity and mints a short-lived
+GitHub App token scoped only to this tap. No private source credential is
+stored in this public repository.
