@@ -5,7 +5,8 @@
 Install the coding-agent orchestrator on macOS or Linux:
 
 ```bash
-brew install tesserix/tap/crew
+brew install --cask tesserix/tap/crew  # macOS: prebuilt binary, no Xcode needed
+# Linux: brew install tesserix/tap/crew
 crew doctor
 crew
 ```
@@ -14,7 +15,8 @@ Crew reuses the existing logins of supported coding CLIs. Install and authentica
 those CLIs separately. Source and release archives are public at
 [tesserix/tesserix-crew](https://github.com/tesserix/tesserix-crew).
 
-Upgrade with `brew update && brew upgrade crew`. The formula installs immutable,
+Upgrade with `brew update && brew upgrade --cask crew` on macOS, or
+`brew update && brew upgrade crew` on Linux. The cask/formula installs immutable,
 checksummed release binaries for Apple Silicon, Intel macOS, and ARM64/AMD64 Linux.
 
 ## DevAI
