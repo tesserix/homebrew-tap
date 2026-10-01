@@ -1,5 +1,24 @@
 # Tesserix Homebrew tap
 
+## Tesserix Crew
+
+Install the coding-agent orchestrator on macOS or Linux:
+
+```bash
+brew install tesserix/tap/crew
+crew doctor
+crew
+```
+
+Crew reuses the existing logins of supported coding CLIs. Install and authenticate
+those CLIs separately. Source and release archives are public at
+[tesserix/tesserix-crew](https://github.com/tesserix/tesserix-crew).
+
+Upgrade with `brew update && brew upgrade crew`. The formula installs immutable,
+checksummed release binaries for Apple Silicon, Intel macOS, and ARM64/AMD64 Linux.
+
+## DevAI
+
 Install the latest public DevAI CLI on macOS:
 
 ```bash
