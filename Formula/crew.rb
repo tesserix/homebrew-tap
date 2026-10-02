@@ -2,30 +2,30 @@
 class Crew < Formula
   desc "One persistent coding session across your subscribed coding agents"
   homepage "https://github.com/tesserix/tesserix-crew"
-  version "0.1.1"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/tesserix/tesserix-crew/releases/download/v0.1.1/crew_0.1.1_darwin_arm64.tar.gz"
-      sha256 "66970ace76f75e113e51c0b2a5cc7aad0c61712f5b5f788b6af45f882ad1cce9"
+      url "https://github.com/tesserix/tesserix-crew/releases/download/v0.2.0/crew_0.2.0_darwin_arm64.tar.gz"
+      sha256 "e021f7a647a1226cf5c3d8214ae33d6a5926ed1d1606e2768a1395b406fe1713"
     end
 
     on_intel do
-      url "https://github.com/tesserix/tesserix-crew/releases/download/v0.1.1/crew_0.1.1_darwin_amd64.tar.gz"
-      sha256 "926cf0ad9988d4accbad827602d508fb1d9998f7e096106cd05fb23f31b427c8"
+      url "https://github.com/tesserix/tesserix-crew/releases/download/v0.2.0/crew_0.2.0_darwin_amd64.tar.gz"
+      sha256 "88459ad3f70471bc74872d74dfce24d8152b76ca244f02af8af00c34b9594a3c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/tesserix/tesserix-crew/releases/download/v0.1.1/crew_0.1.1_linux_arm64.tar.gz"
-      sha256 "9e3eb3a7bf09eb24de87cc4534dcc2b7f4332c5a4929013a6f53f6f10a263227"
+      url "https://github.com/tesserix/tesserix-crew/releases/download/v0.2.0/crew_0.2.0_linux_arm64.tar.gz"
+      sha256 "d0350a891273b2360d32b3d37914c6acdea60b01ad1ad25523856f9cce623d62"
     end
 
     on_intel do
-      url "https://github.com/tesserix/tesserix-crew/releases/download/v0.1.1/crew_0.1.1_linux_amd64.tar.gz"
-      sha256 "44bf9ebcaea33714a7f7a00ee024ec5ecbc3e8f4adc88c66c8277f3701b3dea1"
+      url "https://github.com/tesserix/tesserix-crew/releases/download/v0.2.0/crew_0.2.0_linux_amd64.tar.gz"
+      sha256 "d7c59ee682a83d4eca45309b285357b427c6de239f98f05accf45904b936ea27"
     end
   end
 
