@@ -2,9 +2,9 @@
 cask "crew" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.3.1"
-  sha256 arm:   "41371d5ef99c9e024bc8b24d5b9ca01ddf629da376ad27563873d6307664adf7",
-         intel: "087b34749c0e0f260f1ef1496fa4139cf30ec9eb02acac4aa288ce31439122ab"
+  version "0.3.2"
+  sha256 arm:   "d09325c9ec673097c1273358e288107e060bd5a4c45f50805a82a79df5139eb2",
+         intel: "0d1c769603a5ee80f9af09281d9614ed09c7607dcfa521674adaec0ab71c4471"
 
   url "https://github.com/tesserix/tesserix-crew/releases/download/v#{version}/crew_#{version}_darwin_#{arch}.tar.gz"
   name "Tesserix Crew"
